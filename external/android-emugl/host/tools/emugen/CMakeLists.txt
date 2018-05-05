@@ -11,3 +11,4 @@ set(SOURCES
     TypeFactory.cpp)
 
 add_executable(emugen ${SOURCES})
+set_target_properties(emugen PROPERTIES COMPILE_FLAGS "-m64" LINK_FLAGS "-m64")
